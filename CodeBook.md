@@ -3,18 +3,23 @@ title: "CodeBook.md"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This document shall give you an overview of the data stored in variable_means.txt.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## Summary
 
-```{r}
-summary(cars)
-```
+The dataset stems from the machine learning dataset Human Activity Recofnition avaiable at <http://archive.ics.uci.edu/ml/data sets/Human+Activity+Recognition+Using+Smartphones>. In the data set presented here you'll find a mean caluculated each of the datasets mean and standard deviation variables for each subject and each activity from the original dataset.
 
-You can also embed plots, for example:
+## Cases
 
-```{r, echo=FALSE}
-plot(cars)
-```
+The rows in the dataset correspond to the measurements in the machine learning dataset.
+In this dataset only the 79 mean and standard deviation are included.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Dimensions
+
+The column of the dataset are structured this way:
+
+Column number | Column name | Description
+--- | --- | ---
+1 | Variable | Name of the variable for which the means were calculated
+2 - 31 | Subject: ## | Mean for the named subject, where ## means the subjects number
+32 - 37 | Activity: Activity name | Mean for the named Activity

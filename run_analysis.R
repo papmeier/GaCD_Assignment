@@ -30,6 +30,10 @@ summary(train_data)
 summary(train_subjects)
 summary(train_activities)
 
+str(train_data)
+str(train_subjects)
+str(train_activities)
+
 ## Read the test data files
 test_data <- read.table(paste0(data_dir,"test/X_test.txt"), sep = "", header=FALSE)
 test_subjects <- read.table(paste0(data_dir,"test/subject_test.txt"), sep = "", header=FALSE)
@@ -39,6 +43,10 @@ test_activities <- read.table(paste0(data_dir,"test/y_test.txt"), sep = "", head
 summary(test_data)
 summary(test_subjects)
 summary(test_activities)
+
+str(test_data)
+str(test_subjects)
+str(test_activities)
 
 ## Set column names for the subject and activities data frames
 names(train_subjects) <- "subject_id"
